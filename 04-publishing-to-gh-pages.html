@@ -1,4 +1,4 @@
-<head><title>tintin - Publishing to Github pages</title><link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat:500" rel="stylesheet"><link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css" rel="stylesheet"><link href="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/favicon-blue.ico" rel="shortcut icon"><style>
+<head><title>tintin - Publishing to Github pages</title><link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat:500" rel="stylesheet"><link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"><link href="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/favicon-blue.ico" rel="shortcut icon"><style>
 html
 {
   height     : 100%;
@@ -191,14 +191,31 @@ h3
   color           : #ffffff;
 }
 
+#menu-toggle
+{
+  position : absolute;
+}
+
+#menu-toggle img
+{
+  position : absolute;
+  left     : 0px;
+}
+
+#menu-toggle .rotateIn
+{
+  z-index : 999;
+}
+
 .tintin-doc-topbar
 {
-  height : 5rem;
+  height : 3rem;
 }
 
 .tintin-doc-topbar a
 {
   margin-left : 1rem;
+  margin-top  : 0rem;
   width       : 1.5rem;
 }
 
@@ -477,7 +494,7 @@ footer
 
 }
 
-/* Generated with Clay, http://fvisser.nl/clay */</style></head><body class="h-100 tintin-fg-black tintin-bg-white"><div id="main-container" class="h-100"><section id="content"><div id="wrapper" class="toggled"><div id="sidebar-wrapper" class="h-100 tintin-bg-blue"><div class="h-100 tintin-bg-70"><p></p></div><ul class="sidebar-nav"><li class="sidebar-brand d-flex tintin-bg-blue"><a href="index.html" class="align-self-center tintin-fg-white"><img src="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/logo.svg"></a></li><li><a href="01-getting-started.html" class="tintin-fg-disabled">Getting Started</a></li><li><a href="02-documenting-your-project.html" class="tintin-fg-disabled">Documenting your project</a></li><li><a href="03-customizing-your-site.html" class="tintin-fg-disabled">Customizing your site</a></li><li><a href="04-publishing-to-gh-pages.html" class="tintin-fg-active">Publishing to Github pages</a></li><li><a href="05-formatting-your-docs.html" class="tintin-fg-disabled">Formatting your docs</a></li></ul></div><nav class="navbar navbar-expand-lg tintin-doc-topbar tintin-fg-white"><a href="#menu-toggle" id="menu-open" class="d-none"><img src="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/menu.png" class="img-fluid"></a><a href="#menu-toggle" id="menu-close"><img src="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/close.png" class="img-fluid"></a></nav><div id="page-content-wrapper"><div class="container"><div class="col"><div data-aos-once="true" data-aos="fade-left" data-aos-duration="800"><h1>Publishing to Github pages</h1>
+/* Generated with Clay, http://fvisser.nl/clay */</style></head><body class="h-100 tintin-fg-black tintin-bg-white"><div id="main-container" class="h-100"><section id="content"><div id="wrapper" class="toggled"><div id="sidebar-wrapper" class="h-100 tintin-bg-blue"><div class="h-100 tintin-bg-70"><p></p></div><ul class="sidebar-nav"><li class="sidebar-brand d-flex tintin-bg-blue"><a href="index.html" class="align-self-center tintin-fg-white"><img src="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/logo.svg"></a></li><li><a href="01-getting-started.html" class="tintin-fg-disabled">Getting Started</a></li><li><a href="02-documenting-your-project.html" class="tintin-fg-disabled">Documenting your project</a></li><li><a href="03-customizing-your-site.html" class="tintin-fg-disabled">Customizing your site</a></li><li><a href="04-publishing-to-gh-pages.html" class="tintin-fg-active">Publishing to Github pages</a></li><li><a href="05-formatting-your-docs.html" class="tintin-fg-disabled">Formatting your docs</a></li></ul></div><nav class="navbar navbar-expand-lg tintin-doc-topbar tintin-fg-white"><a href="#menu-toggle" id="menu-toggle" class><img src="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/menu.png" class="img-fluid animated rotateOut"><img src="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/close.png" class="img-fluid animated rotateIn"></a></nav><div id="page-content-wrapper"><div class="container"><div class="col"><div class="animated fadeIn"><h1>Publishing to Github pages</h1>
 <p>Right now tintin does not support automatic Github pages upload, but it&#39;s
 a very easy process.</p>
 <p>By default, tintin will save the website to <code>.stack-work/tintin/rendered</code>.
@@ -493,4 +510,4 @@ git commit -m &quot;Update docs&quot;
 git remote add origin &lt;your repo&gt;
 git push origin gh-pages
 </code></pre>
-</div></div></div></div></div></section><div class="tintin-doc-footer clear-fix"><div class="float-right"><div style="float: left" class="d-inline"><p class>Site generated with </p></div><a style="float: left" href="https://theam.github.io/tintin"><img src="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/logo.svg" class="filter-gray"></a><div class="clear-fix float-right"><span style="float:left">&mdash; &copy; 2018 </span><a href="http://theam.io" class="float:left"><img src="http://theam.io/logo_theam.png" class="footer-theam"></a></div></div></div></div><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script><script src="https://cdn.rawgit.com/icons8/bower-webicon/v0.10.7/jquery-webicon.min.js"></script><script>$(function() { AOS.init(); })</script><script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script><script>hljs.initHighlightingOnLoad()</script><script>$(function () {$("#menu-open").click(function(e) {e.preventDefault();$("#wrapper").toggleClass("toggled");anime({targets: "#menu-open img", scale: 0.125, rotate: '0deg'});$("#menu-close").toggleClass("d-none");$("#menu-open").toggleClass("d-none");anime({targets: "#menu-close img", scale: 1, rotate: '180deg'});})});</script><script>$(function () {$("#menu-close").click(function(e) {e.preventDefault();$("#wrapper").toggleClass("toggled");anime({targets: "#menu-close img", scale: 0.125, rotate: '0deg'});$("#menu-close").toggleClass("d-none");$("#menu-open").toggleClass("d-none");anime({targets: "#menu-open img", scale: 1, rotate: '180deg'});})});</script></body>
+</div></div></div></div></div></section><div class="tintin-doc-footer clear-fix"><div class="float-right"><div style="float: left" class="d-inline"><p class>Site generated with </p></div><a style="float: left" href="https://theam.github.io/tintin"><img src="https://s3-eu-west-1.amazonaws.com/worldwideapps/assets/logo.svg" class="filter-gray"></a><div class="clear-fix float-right"><span style="float:left">&mdash; &copy; 2018 </span><a href="http://theam.io" class="float:left"><img src="http://theam.io/logo_theam.png" class="footer-theam"></a></div></div></div></div><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script><script src="https://cdn.rawgit.com/icons8/bower-webicon/v0.10.7/jquery-webicon.min.js"></script><script>hljs.initHighlightingOnLoad()</script><script>$(function () {$("#menu-toggle").click(function(e) {e.preventDefault();$("#wrapper").toggleClass("toggled");$("#menu-toggle img").toggleClass("rotateIn rotateOut");})});</script></body>
