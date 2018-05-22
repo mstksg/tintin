@@ -173,20 +173,28 @@ h3
   font-weight     : bold;
 }
 
-.sidebar-nav li a:hover
+
+.sidebar-nav li .tintin-fg-disabled:hover
 {
+  mix-blend-mode  : normal;
+  -webkit-filter  : invert(0%);
+  -moz-filter     : invert(0%);
+  -ms-filter      : invert(0%);
+  -o-filter       : invert(0%);
+  filter          : invert(0%);
   text-decoration : none;
-  color           : #ffffff;
+  color           : #000000;
 }
 
-.sidebar-nav li a:active
-{
-  text-decoration : none;
-  color           : #ffffff;
-}
 
-.sidebar-nav li a:focus
+.sidebar-nav li .tintin-fg-active:hover
 {
+  mix-blend-mode  : normal;
+  -webkit-filter  : invert(0%);
+  -moz-filter     : invert(0%);
+  -ms-filter      : invert(0%);
+  -o-filter       : invert(0%);
+  filter          : invert(0%);
   text-decoration : none;
   color           : #ffffff;
 }
@@ -274,7 +282,6 @@ h3
   min-height : 95%;
 }
 
-
 .sidebar-nav > .sidebar-brand
 {
   height         : 3rem;
@@ -295,6 +302,70 @@ h3
 {
   font-weight      : bold;
   background-color : rgba(255,255,255,0.15);
+}
+
+.tintin-navbar .left-part
+{
+  padding-left : 0px !important;
+}
+
+.tintin-navbar ul
+{
+  margin-top      : 1rem;
+  list-style-type : none;
+}
+
+.tintin-navbar ul li
+{
+  margin-right : 1rem;
+  display      : inline;
+}
+
+.tintin-navbar ul li a
+{
+  color          : #000000;
+  -webkit-filter : invert(35%);
+  -moz-filter    : invert(35%);
+  -ms-filter     : invert(35%);
+  -o-filter      : invert(35%);
+  filter         : invert(35%);
+  mix-blend-mode : difference;
+}
+
+.tintin-navbar ul li a:hover
+{
+  mix-blend-mode  : normal;
+  -webkit-filter  : invert(0%);
+  -moz-filter     : invert(0%);
+  -ms-filter      : invert(0%);
+  -o-filter       : invert(0%);
+  filter          : invert(0%);
+  text-decoration : none;
+  color           : #000000;
+}
+
+
+.tintin-navbar .tintin-navbar-active a
+{
+  mix-blend-mode : normal;
+  -webkit-filter : invert(0%);
+  -moz-filter    : invert(0%);
+  -ms-filter     : invert(0%);
+  -o-filter      : invert(0%);
+  filter         : invert(0%);
+  color          : #ffffff;
+}
+
+.tintin-navbar .tintin-navbar-active a:hover
+{
+  mix-blend-mode  : normal;
+  -webkit-filter  : invert(0%);
+  -moz-filter     : invert(0%);
+  -ms-filter      : invert(0%);
+  -o-filter       : invert(0%);
+  filter          : invert(0%);
+  text-decoration : none;
+  color           : #ffffff;
 }
 
 .tintin-bg-70
@@ -439,7 +510,13 @@ h3
 
 .tintin-fg-disabled
 {
-  color : rgba(255,255,255,0.35);
+  color          : #000000;
+  -webkit-filter : invert(35%);
+  -moz-filter    : invert(35%);
+  -ms-filter     : invert(35%);
+  -o-filter      : invert(35%);
+  filter         : invert(35%);
+  mix-blend-mode : difference;
 }
 
 footer
